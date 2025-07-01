@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+   
+    
+    <bean id="product1" class="com.spring.Product">
+    <constructor-arg>
+    <map>
+    	<entry key="keyboard" value="1232.87"></entry>
+        <entry key="mouse" value="673.22"></entry>
+        <entry key="PC" value="8833.34"></entry>
+    </map>
+    </constructor-arg>
+    </bean>
+    
+     <bean id ="order1" class="com.spring.Order">
+    <constructor-arg value="laptop"></constructor-arg>
+     <constructor-arg value="112"></constructor-arg>
+     <constructor-arg  ref="product1"></constructor-arg>
+    </bean>
+    
+    
+    <bean id="userone" class="com.spring.Flipkart">
+   
+    
+    </bean>
+    
+    
+    
+   
+    
+</beans>
