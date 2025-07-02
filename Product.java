@@ -1,31 +1,23 @@
-package com.spring;
-
-import java.util.Map;
+package com.morgan;
 
 public class Product {
+	private int id;
+	private String name;
 	
-	private Map<String, Double> productList;
-	
-	public Product() {
-		System.out.println("default constructor called ... Product ");
+	public int getId() {
+		return id;
 	}
-	
-	
-	public Product(Map<String, Double> productList) {
-		System.out.println("Parameterized constructor called ... Product");
-		this.productList=productList;
+	public void setId(int id) {
+		System.out.println("setter method called from Product - id");
+		this.id = id;
 	}
-
-
-	public Map<String, Double> getProductList() {
-		return productList;
+	public String getName() {
+		return name;
 	}
-
-
-	
-
-
-	
+	public void setName(String name) {
+		System.out.println("setter method called from Product - name");
+		this.name = name;
+	}
 	
 
 }

@@ -1,37 +1,18 @@
-package com.spring;
-
+package com.morgan;
 
 public class Order {
-	private String productName;
-	private int productId;
-	private Product productl;
+	private Cart cart;
+
+	public Cart getCart() {
+		return cart;
+	}
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
+
 	
 	
-	
-
-	public Order() {
-		System.out.println("default constructor called ...Order");
-	}
-	
-	public Order(String productName, int productId, Product productl) {
-		System.out.println("Parameterized constructor called....Order ");
-		this.productId=productId;
-		this.productName=productName;
-		this.productl=productl;
-	}
-
-	public String getProductName() {
-		return productName;
-	}
-
-	public int getProductId() {
-		return productId;
-	}
-
-	public Product getProductl() {
-		return productl;
-	}
-
 	
 	
 	
