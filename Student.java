@@ -1,12 +1,16 @@
-package com.byjus;
+package com.component;
 
+import org.springframework.stereotype.Component;
+
+@Component("student1")
 public class Student {
 	private int id;
 	private String name;
 	
 	public Student() {
-		System.out.println("Default constructor called.....Student");
+		System.out.println("Student object created...");
 	}
+	
 	public int getId() {
 		return id;
 	}
@@ -19,4 +23,6 @@ public class Student {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+
 }
