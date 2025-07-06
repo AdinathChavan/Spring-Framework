@@ -1,21 +1,25 @@
-package com.byjus;
-
-import java.util.List;
+package sprint_annotation_autowire_field_injection;
 
 public class Address {
 	
-	private List<String> address;
+	private int pincode;
+	private String area;
 	
 	public Address() {
-		System.out.println("Default constructor called .... Address");
+		System.out.println("Address object created...");
 	}
-
-	public List<String> getAddress() {
-		return address;
+	
+	public int getPincode() {
+		return pincode;
 	}
-
-	public void setAddress(List<String> address) {
-		this.address = address;
+	public void setPincode(int pincode) {
+		this.pincode = pincode;
+	}
+	public String getArea() {
+		return area;
+	}
+	public void setArea(String area) {
+		this.area = area;
 	}
 	
 	
