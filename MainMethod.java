@@ -11,7 +11,7 @@ public class MainMethod {
 		
 		Payment paymentGet = (Payment) container.getBean("paymentOptions");
 		
-		System.out.println(paymentGet.getPayment());
+		System.out.println(paymentGet.getPayment().getUpiPayment());
 		
 		
 		
