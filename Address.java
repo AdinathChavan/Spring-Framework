@@ -1,18 +1,17 @@
-package sprint_annotation_autowire_field_injection;
+package com.infoysis;
 
 public class Address {
 	
-	private int pincode;
+	private String pincode;
 	private String area;
 	
 	public Address() {
 		System.out.println("Address object created...");
 	}
-	
-	public int getPincode() {
+	public String getPincode() {
 		return pincode;
 	}
-	public void setPincode(int pincode) {
+	public void setPincode(String pincode) {
 		this.pincode = pincode;
 	}
 	public String getArea() {
@@ -21,6 +20,7 @@ public class Address {
 	public void setArea(String area) {
 		this.area = area;
 	}
+	
 	
 	
 

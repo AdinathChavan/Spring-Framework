@@ -1,27 +1,21 @@
-package sprint_annotation_autowire_field_injection;
+package com.infoysis;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Student {
 	
-	private int id;
 	private String name;
 	
+
 	@Autowired
-	public Address address;
-	@Autowired
-	public Address one;
+	private Address address12;
 	
 	public Student() {
 		System.out.println("Student object created....");
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
+		
+		
+		
 	}
 
 	public String getName() {
@@ -33,12 +27,11 @@ public class Student {
 	}
 
 	public Address getAddress() {
-		return address;
+		return address12;
 	}
 
 	public void setAddress(Address address) {
-		this.address = address;
+		this.address12 = address;
 	}
-	
 
 }
